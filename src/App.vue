@@ -1,3 +1,5 @@
+
+
 <template>
   <div class="containerPrincipal">
   <MenuSimple :colors="color" />
@@ -40,7 +42,7 @@ export default {
 }
 
 body{
-  background-color: azure;
+  background-color: lavender;
 }
 .containerPrincipal{
   width: 100%;

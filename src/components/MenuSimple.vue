@@ -1,7 +1,8 @@
 <template>
     <div class="back">
         <div class="container">
-            <h1>Color<span :style="{color:colors}">Flip</span></h1>
+            <h1>Color<span :style=" {color: colors === '#fff' ? colorsDefaut : colors} ">Flip</span></h1>
+            {{ console.log(colors) }}
             <ul>
                 <li>Hex</li>
                 <li>Color</li>
@@ -15,7 +16,14 @@
 <script>
 export default {
     name: "MenuSimple",
-    props: ['colors']
+    props: ["colors"],
+    data(){
+        return{
+            colorsDefaut: "rgb(230, 230, 250)"
+        }
+    }
+
+    
 }
 </script>
 
@@ -34,13 +42,12 @@ export default {
     width: 700px;
     height: 60px;
 }
-.container span{
-    color: black;
-}
+
 
 .container h1 {
     padding-left: 1rem ;
     color: white;
+
 }
 
 .container ul{

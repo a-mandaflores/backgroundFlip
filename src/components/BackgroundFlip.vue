@@ -13,7 +13,7 @@ export default {
   emits: ['clicou'],
   data() {
     return {
-      change: "rgb(146, 166, 255)"
+      change: "rgb(230, 230, 250)"
     }
   },
   methods:{
@@ -30,8 +30,8 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .background{
   color: white;
   font-weight: 500;
